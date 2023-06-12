@@ -1,0 +1,26 @@
+<a href="/create">Agregar un libro</a>
+{{#each books}}
+<article>
+    <section>
+        <h2>
+            {{titulo}}
+        </h2>
+        <figure>
+            <img src="data:image;base64, {{portada}}">
+        </figure>
+        Autor: {{autor}} <br>
+        Año: {{year}}
+    </section>
+    <br>
+    <p>
+        {{reseña}}
+    </p>
+    <td>
+        <form action="/libros/delete" method="POST">
+            <input type="hidden" value="{{idbook}}" name="id">
+            <button type="submit">Delete</button>
+        </form>
+        <a href="/libros/edit/{{idbook}}">Edit</a>
+    </td>
+</article>
+{{/each}}

@@ -1,0 +1,14 @@
+<a href="/libros">Volver</a>
+<div>
+    <h1>Editar libro</h1>
+    {{#each books}}
+    <form action="" method="POST" enctype="multipart/form-data" class="mt-4" id="bookForm">
+        <input type="text" placeholder="Título" name="titulo" value="{{titulo}}">
+        <input type="file" accept="image/png, image/jpeg" name="portada" value="{{portada}}"/>
+        <input type="text" placeholder="Autor" name="autor" value="{{autor}}"/>      
+        <input type="text" placeholder="Año" name="year" value="{{year}}"/>
+        <textarea placeholder="Reseña" name="reseña">{{reseña}}</textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    {{/each}}
+</div>

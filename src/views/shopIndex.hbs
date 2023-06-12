@@ -1,0 +1,128 @@
+<head>
+  <script src="scripts/script.js" defer></script>
+  <link rel="stylesheet" href="styles/shopStyle.css">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <section class="contenedor">
+      <h2>En venta</h2>
+      <form id="formulario">
+        <div class="libros">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="book">
+                    <img src="images/libros/no-mouth.jpg" style="transform: scale(0.7)">
+                    <div class="title"><h3>No tengo boca y debo gritar</h3></div>
+                    <div class="author">Harlan Ellison</div>
+                    <div class="price">$358.00</div>
+                    <div class="quantity"><input type="number" min="0" name="cantidad-1" value="0"></div>
+                    <div class="checkbox"><input type="checkbox" name="seleccion-1"></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="book">
+                    <img src="images/libros/snow-crash.jpg" style="transform: scale(0.7)">
+                    <div class="title"><h3>Snowcrash</h3></div>
+                    <div class="author">Neal Stephenson</div>
+                    <div class="price">$568.00</div>
+                    <div class="quantity"><input type="number" min="0" name="cantidad-2" value="0"></div>
+                    <div class="checkbox"><input type="checkbox" name="seleccion-2"></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="book">
+                    <img src="images/libros/seveneves.jpg" style="transform: scale(0.7)">
+                    <div class="title"><h3>Seveneves</h3></div>
+                    <div class="author">Neal Stephenson</div>
+                    <div class="price">$380.00</div>
+                    <div class="quantity"><input type="number" min="0" name="cantidad-3" value="0"></div>
+                    <div class="checkbox"><input type="checkbox" name="seleccion-3"></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="book">
+                    <img src="images/libros/foundation.jpg" style="transform: scale(0.7)">
+                    <div class="title"><h3>Fundación</h3></div>
+                    <div class="author">Isaac Asimov</div>
+                    <div class="price">$380.00</div>
+                    <div class="quantity"><input type="number" min="0" name="cantidad-3" value="0"></div>
+                    <div class="checkbox"><input type="checkbox" name="seleccion-3"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="book">
+                    <img src="images/libros/foundation-empire.jpg" style="transform: scale(0.7)">
+                    <div class="title"><h3>Fundación e imperio</h3></div>
+                    <div class="author">Isaac Asimov</div>
+                    <div class="price">$358.00</div>
+                    <div class="quantity"><input type="number" min="0" name="cantidad-1" value="0"></div>
+                    <div class="checkbox"><input type="checkbox" name="seleccion-1"></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="book">
+                    <img src="images/libros/foundation-second.jpg" style="transform: scale(0.7)">
+                    <div class="title"><h3>Segunda fundación</h3></div>
+                    <div class="author">Isaac Asimov</div>
+                    <div class="price">$568.00</div>
+                    <div class="quantity"><input type="number" min="0" name="cantidad-2" value="0"></div>
+                    <div class="checkbox"><input type="checkbox" name="seleccion-2"></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="book">
+                    <img src="images/libros/harlequin.jpg" style="transform: scale(0.7)">
+                    <div class="title"><h3>¡Arrepiéntete, Arlequín! dijo el señor Tic-Tac</h3></div>
+                    <div class="author">Harlan Ellison</div>
+                    <div class="price">$380.00</div>
+                    <div class="quantity"><input type="number" min="0" name="cantidad-3" value="0"></div>
+                    <div class="checkbox"><input type="checkbox" name="seleccion-3"></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="book">
+                    <img src="images/libros/1984.jpg" style="transform: scale(0.7)">
+                    <div class="title"><h3>1984</h3></div>
+                    <div class="author">George Orwell</div>
+                    <div class="price">$380.00</div>
+                    <div class="quantity"><input type="number" min="0" name="cantidad-3" value="0"></div>
+                    <div class="checkbox"><input type="checkbox" name="seleccion-3"></div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <aside class="sidebar">
+          <h2>Carrito de Compra</h2>
+          <hr> <br>
+          <div class="items"></div>
+          <br>
+          <div class="Total">
+            <span>Total:</span>
+            <span class="total">$0.00</span>
+          </div>
+          <div class="bottombar">
+            <hr><br>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="terminos" required>
+                Acepto los términos y condiciones
+              </label>
+            </div>
+            <div class="botones">
+              <button class="enviar" type="submit">Enviar</button>
+              <button class="cancelar" type="button">Cancelar</button>
+            </div>
+          </div>
+        </aside>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
